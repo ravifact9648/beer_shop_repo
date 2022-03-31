@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detail View</h1>
+    <li>
+      <ul> Name: {{beer.name|title}}</ul>
+      <ul> Taste: {{beer.taste|title}}</ul>
+       
+       <ul> Color: {{beer.color|title}}</ul>
+        <ul>Price: {{beer.price}}</ul>
+        <ul>Id: {{beer.id}}</ul>
+    </li>
+    <a href="/delete/{{beer.id}}">Delete</a>
+    <a href="/update/{{beer.id}}">Update</a>
+    <a href="/">Home</a>
+</body>
+</html>
